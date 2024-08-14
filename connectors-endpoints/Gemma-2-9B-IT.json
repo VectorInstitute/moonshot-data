@@ -1,0 +1,16 @@
+{
+  "name": "Gemma2 9B IT",
+  "connector_type": "openai-connector",
+  "uri": "http://gpu056:8080/v1",
+  "token": "Token",
+  "max_calls_per_second": 10,
+  "max_concurrency": 10,
+  "params": {
+    "timeout": 1000,
+    "allow_retries": true,
+    "num_of_retries": 3,
+    "temperature": 0.5,
+    "model": "gemma-2-9b-it",
+    "max_tokens": 128
+  }
+}

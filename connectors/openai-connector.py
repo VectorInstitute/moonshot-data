@@ -58,7 +58,9 @@ class OpenAIConnector(Connector):
             "messages": openai_request,
             "timeout": self.timeout,
         }
+        logger.info(f"Sending OpenAI request with params: {new_params}")
         response = await self._client.chat.completions.create(**new_params)
+        logger.info(f"Got response: {response}")
         return await self._process_response(response)
 
     async def _process_response(self, response: Any) -> str:

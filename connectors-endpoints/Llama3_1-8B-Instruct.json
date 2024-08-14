@@ -1,0 +1,21 @@
+{
+  "name": "Llama3_1 8B Instruct",
+  "connector_type": "openai-connector",
+  "uri": "http://gpu009:8080/v1",
+  "token": "Token",
+  "max_calls_per_second": 10,
+  "max_concurrency": 10,
+  "params": {
+    "timeout": 1000,
+    "allow_retries": true,
+    "num_of_retries": 3,
+    "temperature": 0.5,
+    "model": "Meta-Llama-3.1-8B-Instruct",
+    "max_tokens": 128,
+    "extra_body": {
+      "stop_token_ids": [
+        128009
+      ]
+    }
+  }
+}
